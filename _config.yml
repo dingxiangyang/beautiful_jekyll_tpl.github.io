@@ -6,17 +6,7 @@
 # --- Required options --- #
 
 # Name of website
-title: My website Tpl
-
-# Short description of your site
-description: A virtual proof that I'm awesome
-
-# GitHub Actions
-repository: "VincentTam/beautiful-jekyll"
-
-# --- Local development options ---
-# If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
-# *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
+title: My Website Tpl
 
 # Your name to show in the footer
 author: Some Person
@@ -24,7 +14,7 @@ author: Some Person
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme1"
+  About Me: "aboutme"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
@@ -55,6 +45,7 @@ social-network-links:
   twitter: daattali
   patreon: DeanAttali
   youtube: c/daattali
+#  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
@@ -98,6 +89,9 @@ feed_show_excerpt: true
 # Whether or not to show a list of tags below each post preview in the feed page
 feed_show_tags: true
 
+# Add a search button to the navbar
+post_search: true
+
 # The keywords to associate with your website, for SEO purposes
 #keywords: "my,list,of,keywords"
 
@@ -106,12 +100,12 @@ feed_show_tags: true
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
 navbar-col: "#FFFFFF"
-navbar-text-col: "#404040"
+navbar-text-col: "#432c6c"
 navbar-border-col: "#DDDDDD"
-page-col: "#FFFFFF"
+page-col: "#F6F6F6"
 text-col: "#404040"
 link-col: "#008AFF"
-hover-col: "#0085A1"
+hover-col: "#752ddb"
 footer-col: "#EAEAEA"
 footer-text-col: "#777777"
 footer-link-col: "#404040"
@@ -141,6 +135,9 @@ footer-link-col: "#404040"
 
 # Fill in your Google Analytics ID to track your website using Google Analytics
 #google_analytics: ""
+
+# Fill in your Cloudflare Analytics beacon token to track your website using Cloudflare Analytics
+#cloudflare_analytics: ""
 
 # Google Tag Manager ID
 #gtm: ""
@@ -177,10 +174,10 @@ footer-link-col: "#404040"
 # https://github.com/eduardoboucas/staticman/ and https://staticman.net/ for further 
 # instructions. For any support with staticman please direct questions to staticman and 
 # not to BeautifulJekyll.
-staticman:
-  repository : vincenttam/beautiful-jekyll # GitHub username/repository eg. "daattali/beautiful-jekyll"
-  branch     : gh-pages # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
-  endpoint   : https://secretman3.herokuapp.com/v3/entry/github/ # URL of your deployment, with a trailing slash eg. "https://<your-api>/v3/entry/github/"
+#staticman:
+#  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
+#  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
+#  endpoint   : # URL of your deployment, with a trailing slash eg. "https://<your-api>/v3/entry/github/"
 #  reCaptcha:   # (optional, set these parameters in `staticman.yml` as well) 
 #    siteKey  : # You need to apply for a site key on Google
 #    secret   : # Encrypt your password by going to https://<your-own-api>/v3/encrypt/<your-site-secret>
@@ -236,7 +233,6 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
-remote_theme: daattali/beautiful-jekyll@5.0.0
-
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
+
