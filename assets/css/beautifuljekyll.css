@@ -67,6 +67,14 @@ hr.small {
   border-radius: 0.1875rem;
 }
 
+.sticky-top {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
 /* fix in-page anchors to not be behind fixed header */
 :target:before {
   content: "";
