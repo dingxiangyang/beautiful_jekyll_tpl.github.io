@@ -129,6 +129,9 @@ img {
 
 /* --- Navbar --- */
 
+.navbar .menu{
+  justify-content: center;
+}
 .navbar-custom {
   background-color: {{ site.navbar-col | default: "#FFFFFF" }};
   border-bottom: 1px solid {{ site.navbar-border-col | default: "#DDDDDD" }};
